@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q7h0jwdJoTwA9PQFXIcDPGG6tlWct2uLYYf/3+YntxZbOTefqAAxx1s5Npd4iuQxQuArrdulnK+/yGDTnCC7UA==",
+  "success": true,
+  "projectFilePath": "D:\\Visual Studio\\스파르타\\C#\\TextRPG\\TextRPG\\TextRPG.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tive\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
