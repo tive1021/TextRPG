@@ -139,9 +139,6 @@ namespace TextRPG
             }
 
             Save(playerStats, items);
-
-
-
         }
 
         static int Input()
@@ -832,12 +829,24 @@ namespace TextRPG
 
         public static void Load(ref PlayerStats data, ref Item[] item)
         {
-            if (!File.Exists("./playerStats.json"))
+            if (File.Exists("./playerStats.json"))
             {
                 string json = File.ReadAllText("./playerStats.json");
                 playerStats = JsonConvert.DeserializeObject<PlayerStats>(json);
-                json = File.ReadAllText("./itemData.json");
-                items = JsonConvert.DeserializeObject<Item[]>(json); 
+            }
+            else
+            {
+                playerStats = new PlayerStats();
+            }
+
+            if (File.Exists("./itemData.json"))
+            {
+                string json2 = File.ReadAllText("./itemData.json");
+                items = JsonConvert.DeserializeObject<Item[]>(json2); 
+            }
+            else
+            {
+                ItemList();
             }
         }
     }
